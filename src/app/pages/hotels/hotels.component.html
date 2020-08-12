@@ -1,0 +1,24 @@
+<p>Hoteller</p>
+
+
+
+<div class="countries" *ngIf="countrys">
+    <a *ngFor="let item of countrys" (click)="filter(item.id)">{{item.name}}</a>
+</div>
+
+<div>
+    <article *ngIf="country">
+        <h2>Vores hoteller i {{country.name}}</h2>
+        <p>{{country.description}}</p>
+    </article>
+</div>
+
+<div class="citys" *ngIf="hotels">
+    <article *ngFor="let item of citys">
+        <figure>
+            <img src="{{item.image}}" alt="hotel image">
+        </figure>
+        <h3>{{item.name}}</h3>
+        <p>{{item.description}}</p>
+    </article>
+</div>
