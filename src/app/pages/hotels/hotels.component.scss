@@ -9,4 +9,20 @@
     }
 }
 
+.countries-sub{
+    border-bottom: dashed #d1d1d1 1px;
+    margin-bottom: 1em;
+}
 
+
+.cities{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+
+    
+    img{
+        width: 100%;
+        
+    }
+}
