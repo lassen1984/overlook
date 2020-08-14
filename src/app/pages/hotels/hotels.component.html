@@ -1,29 +1,29 @@
-<p>Hoteller</p>
+<div class="side-wrapper">
+
+    <div class="countries" *ngIf="countrys">
+        <a *ngFor="let item of countrys" (click)="filter(item.id)">{{item.name}}</a>
+    </div>
 
 
+    <div class="countries-sub">
+        <article *ngIf="country">
+            <h2>Vores hoteller i {{country.name}}</h2>
+            <p>{{country.description}}</p>
+        </article>
+    </div>
 
-<div class="countries" *ngIf="countrys">
-    <a *ngFor="let item of countrys" (click)="filter(item.id)">{{item.name}}</a>
-</div>
+    <div class="cities" *ngIf="hotels">
 
-<div class="countries-sub">
-    <article *ngIf="country">
-        <h2>Vores hoteller i {{country.name}}</h2>
-        <p>{{country.description}}</p>
-    </article>
-</div>
+        <article *ngFor="let item of citys">
 
-<div class="cities" *ngIf="hotels">
+            <figure>
+                <img src="{{item.image}}" alt="hotel image">
+            </figure>
 
-    <article *ngFor="let item of citys">
+            <h3>{{item.name}}</h3>
+            <p>{{item.description}}</p>
 
-        <figure>
-            <img src="{{item.image}}" alt="hotel image">
-        </figure>
+        </article>
 
-        <h3>{{item.name}}</h3>
-        <p>{{item.description}}</p>
-
-    </article>
-
+    </div>
 </div>

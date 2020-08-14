@@ -3,12 +3,12 @@
 <svg version="1.1" id="Hotel_Overlook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
      y="0px" viewBox="0 0 600 200" style="enable-background:new 0 0 525 200;" xml:space="preserve">
 <style type="text/css">
-    .st0{font-family:'OpenSans-Light';}
-    .st1{font-size:60px; fill: #AAAAAA;}
+    .st0{font-family:'arial';}
+    .st1{font-size:60px; fill: #FFF;}
     .st2{fill:#FF0000;}
     .st3{fill:none;stroke:#AAAAAA;stroke-miterlimit:10;}
 </style>
-<text transform="matrix(1 0 0 1 12.561 114.2925)" class="st0 st1">HOTEL OVERLOOK</text>
+<text transform="matrix(1 0 0 1 12.561 114.2925)"  class="st0 st1">HOTEL OVERLOOK</text>
 <polygon class="st2" points="267.71,159.84 278.38,153.32 289.05,159.84 286.14,147.68 295.64,139.54 283.18,138.55 278.38,127 
     273.58,138.55 261.11,139.54 270.61,147.68 "/>
 <polygon class="st2" points="306.4,159.84 317.07,153.32 327.74,159.84 324.83,147.68 334.34,139.54 321.87,138.55 317.07,127 

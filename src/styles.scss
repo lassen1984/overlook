@@ -12,3 +12,16 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+.side-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media(max-width: 950px) {
+
+    .side-wrapper{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+}
