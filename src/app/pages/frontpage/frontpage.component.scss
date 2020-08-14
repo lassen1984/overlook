@@ -1,0 +1,25 @@
+h2{
+    padding: 1em 0 1em 0;
+}
+
+.news{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    img{
+        width: 100%;
+    }
+
+}
+
+.rooms{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+
+    img{
+        width: 100%;
+    }
+
+}

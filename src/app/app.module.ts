@@ -14,6 +14,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { SliderComponent } from './tools/slider/slider.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { MapComponent } from './pages/map/map.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     ReservationsComponent,
     LoginComponent,
     AboutComponent,
-    SliderComponent
+    SliderComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
