@@ -5,7 +5,9 @@
 
     <section>
         <h2>Se vores nyheder</h2>
+
         <div class="news" *ngIf="news">
+            <!--  ngIf Tjekker om news eksisterer - hvis ja execute kode:-->
             <article *ngFor="let item of news | slice:0:3">
                 <figure>
                     <img src="{{item.image}}" alt="News image">

@@ -9,6 +9,8 @@ export class FetchserviceService {
   constructor(private http: HttpClient) {
   }
 
+  //Get fetch
+
   getNews() {
     return this.http.get('https://api.mediehuset.net/overlook/news');
   }
@@ -25,7 +27,7 @@ export class FetchserviceService {
     return this.http.get(`https://api.mediehuset.net/overlook/hotels/${id}`);
   }
 
-
+  //Put fetch direct api
 
 
 
