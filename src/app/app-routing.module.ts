@@ -6,6 +6,7 @@ import { HotelsComponent } from './pages/hotels/hotels.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ReservationsComponent } from './pages/reservations/reservations.component';
 import { RoomsComponent } from './pages/rooms/rooms.component';
+import { SearchresultComponent } from './pages/searchresult/searchresult.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'hotels', component: HotelsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'reservations', component: ReservationsComponent },
-  { path: 'rooms', component: RoomsComponent }
+  { path: 'rooms', component: RoomsComponent },
+  { path: 'search/:keyword', component: SearchresultComponent }
 
 ];
 

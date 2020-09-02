@@ -4,7 +4,7 @@
         <p>© 2019 Hotel Overlook. Alle rettigheder forbeholdt.</p>
     </div>
 
-    <div class="social-icons"></div>
+    <div class="social-icons"> <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> </div>
 
     <div class="list-holder">
         <p>Hoteller og destinationer</p>
@@ -12,4 +12,22 @@
         <p>Reservation</p>
         <p>Om Overlook</p>
     </div>
+</div>
+
+
+<div class="cookiebanner" [hidden]="cookiecheck" #banner>
+
+<article>
+  <h3>Cookie politik</h3>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facere quasi corrupti cupiditate eligendi, voluptas incidunt perferendis? Eius natus delectus in quod optio tempora labore recusandae? Beatae placeat, itaque ipsam doloremque mollitia minima eos consectetur quae temporibus earum quasi ipsum fugiat quibusdam nihil pariatur inventore impedit dolore. Nam, ipsum numquam.</p>
+</article>
+
+
+<div id="banner" >
+  <button  (click)="acceptCookies()">Accepter</button>
+</div>
+
+
+
+
 </div>

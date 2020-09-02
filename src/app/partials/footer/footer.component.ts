@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { CookieService } from 'src/app/services/cookie.service';
+
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+@ViewChild('banner') banner;
 
-  ngOnInit(): void {
-  }
+cookiecheck = this.cookie.get('cookiepolicy')
+
+  constructor(private cookie: CookieService) { }
+
+  ngOnInit(): void {console.log(this.cookiecheck);
+   }
+
+
+acceptCookies(){
+
+this.cookie.set('cookiepolicy',1);
+
+this.banner.nativeElement.classList.add('hide_cookiebanner');
+
+
+}
 
 }

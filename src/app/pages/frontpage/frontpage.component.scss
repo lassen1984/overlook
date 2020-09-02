@@ -18,8 +18,24 @@ h2{
     grid-template-columns: 1fr 1fr 1fr;
     gap:20px;
 
+    height: +10px;
+
     img{
         width: 100%;
+        height: 200px;
+
+        object-fit: cover;
     }
 
 }
+
+p {
+  height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+

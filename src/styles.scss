@@ -12,3 +12,6 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+.form-control.ng-touched.ng-invalid{
+  border: 2px solid red;
+}

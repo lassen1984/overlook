@@ -12,6 +12,9 @@ export class FetchserviceService {
   getNews() {
     return this.http.get('https://api.mediehuset.net/overlook/news');
   }
+
+
+
   getRoom(id: number) {
     return this.http.get(`https://api.mediehuset.net/overlook/rooms/${id}`);
   }
@@ -24,6 +27,17 @@ export class FetchserviceService {
   getHotels(id: number) {
     return this.http.get(`https://api.mediehuset.net/overlook/hotels/${id}`);
   }
+
+  getSearchResults(keyword: string){
+    return this.http.get(`https://api.mediehuset.net/overlook/search/${keyword}`);
+  }
+
+
+getLogin(header){
+  return this.http.post('https://api.mediehuset.net/token', header);
+}
+
+
 
 
 

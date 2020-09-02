@@ -1,0 +1,18 @@
+<section>
+  <h1>Søgeresultater</h1>
+
+<section class="search-container">
+
+  <article  *ngFor="let item of searchResult">
+    <h2>{{item.title}}</h2>
+
+    <figure>
+      <img  *ngIf="item.title" src={{item.image}} alt={{item.title}}>
+    </figure>
+
+    <p>{{item.teaser}}</p>
+
+  </article>
+
+</section>
+</section>

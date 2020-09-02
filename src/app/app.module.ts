@@ -15,6 +15,11 @@ import { SliderComponent } from './tools/slider/slider.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { MapComponent } from './pages/map/map.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgImageSliderModule } from 'ng-image-slider';
+import { SearchComponent } from './partials/search/search.component';
+import { SearchresultComponent } from './pages/searchresult/searchresult.component';
+
 
 @NgModule({
   declarations: [
@@ -28,13 +33,19 @@ import { MapComponent } from './pages/map/map.component';
     LoginComponent,
     AboutComponent,
     SliderComponent,
-    MapComponent
+    MapComponent,
+    SearchComponent,
+    SearchresultComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgImageSliderModule
 
   ],
   providers: [],
