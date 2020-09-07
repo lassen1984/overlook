@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { SearchComponent } from './partials/search/search.component';
 import { SearchresultComponent } from './pages/searchresult/searchresult.component';
+import { RatingComponent } from './pages/rating/rating.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { SearchresultComponent } from './pages/searchresult/searchresult.compone
     SliderComponent,
     MapComponent,
     SearchComponent,
-    SearchresultComponent
+    SearchresultComponent,
+    RatingComponent
 
   ],
   imports: [
