@@ -38,6 +38,9 @@ getLogin(header){
 postRating(body, header){
   return this.http.post('https://api.mediehuset.net/overlook/ratings', body, header)
 }
+postReservation(body, header){
+  return this.http.post('https://api.mediehuset.net/overlook/reservations', body, header)
+}
 
 
 

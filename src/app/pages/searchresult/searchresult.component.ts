@@ -36,7 +36,7 @@ sortByNumber() {
   this.reverseId = this.reverseId ? false : true
 }
 
-sortByName(){
+sortByAlpha(){
   if(this.reverseSearch){
     this.searchResult.sort((a,b) => {
     console.log(a.title);
