@@ -1,11 +1,17 @@
 <section>
   <h1>Søgeresultater</h1>
 
+  <section class="sortlist">
+
+
+<button (click)="sortByNumber()" >Sort by id</button>
+<button (click)="sortByName()" >Sort by name</button>
+  </section>
+
 <section class="search-container">
 
   <article  *ngFor="let item of searchResult">
     <h2>{{item.title}}</h2>
-
     <figure>
       <img  *ngIf="item.title" src={{item.image}} alt={{item.title}}>
     </figure>
